@@ -2,6 +2,7 @@ public class getter_setter {
     public static void main(String[] args) {
         Pen p1=new Pen();
         p1.setColor("kala");
+        System.out.println(p1.getColor());
     }
 
 
@@ -20,7 +21,7 @@ class Pen{
     void setTip(int tip){
         this.tip=tip;
     }
-    void setColor(){
+    void setColor(String color){
         this.color=color;
     }
     
