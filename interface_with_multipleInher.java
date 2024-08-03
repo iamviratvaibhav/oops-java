@@ -1,6 +1,8 @@
 /**
  * interface_with_multipleInher
  */
+
+/// This is file is wihthout multiple heritance
 public class interface_with_multipleInher {
     public static void main(String[] args) {
         Queen q=new Queen();
