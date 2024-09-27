@@ -1,29 +1,36 @@
 public class inheritance_ {
     public static void main(String[] args) {
-    //jb koi dosre class ka obj bante h toh wo doosre class ka method leta h
-        Fish starfish= new Fish();
-        starfish.eats();
-        starfish.swims();
+        Animal a=new Animal();
+        a.Breath();
+        a.run();
+        Fish f=new Fish();
+        f.sleep();
+        f.setColor("Blue");
+//        System.out.println("fish color"+ f.getColor());
+
     }
 }
-
-
 class Animal{
-    String color;
-    // String eats;
-    void eats(){
-        System.out.println("eats food:");
+    private String color;
+    void eat(){
+        System.out.println("eat");
     }
-
-    void runs(){
-        System.out.println("runs with fins");
+    void run(){
+        System.out.println("Everyone is able to run");
+    }
+    String Breath(){
+        return "is brathing";
+    }
+    public void setColor(String color){
+        this.color=color;
+    }
+    public void getColor(){
+//        return this.color;
     }
 }
 
 class Fish extends Animal{
-    int fins;
-
-    void swims(){
-        System.out.println("swims with fins also");
+    void sleep(){
+        System.out.println("ITs sleep for some time");
     }
 }
